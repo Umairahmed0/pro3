@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>COVID-19 Hospital Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#patients">Patients</a></li>
+                    <li><a href="#staff">Staff</a></li>
+                    <li><a href="#appointments">Appointments</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="dashboard" class="content-section">
+            <h2>Dashboard</h2>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Total Patients</h3>
+                    <p id="total-patients">200</p>
+                </div>
+                <div class="card">
+                    <h3>Available Beds</h3>
+                    <p id="available-beds">25</p>
+                </div>
+                <div class="card">
+                    <h3>Staff On Duty </h3>
+                    <p id="staff-on-duty">100</p>
+                </div>
+                <div class="card">
+                    <h3>Appointments Today</h3>
+                    <p id="appointments-today">150</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="patients" class="content-section">
+            <h2>Patients</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient ID: 12345</th>
+                        <th>Name:ahmed</th>
+                        <th>Age:24</th>
+                        <th>Status:</th>
+                        <th>Actions:</th>
+                    </tr>
+                </thead>
+                <tbody id="patient-list">
+                     <!-- Patient ka data yahan aaege -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="staff" class="content-section">
+            <h2>Staff</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Staff ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>On Duty</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="staff-list">
+                    <!-- Staff ka data yahan aaege -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="appointments" class="content-section">
+            <h2>Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Appointment ID</th>
+                        <th>Patient Name</th>
+                        <th>Doctor Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="appointment-list">
+                    <!-- Appointment data yahan -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="settings" class="content-section">
+            <h2>Settings</h2>
+            <form id="settings-form">
+                <label for="hospital-name">Hospital Name:</label>
+                <input type="text" id="hospital-name" name="hospital-name">
+                
+                <label for="hospital-address">Hospital Address:</label>
+                <input type="text" id="hospital-address" name="hospital-address">
+                
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 COVID-19 Hospital Management</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
